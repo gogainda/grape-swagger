@@ -28,7 +28,7 @@ jobs:
     needs: ['rubocop']
     strategy:
       matrix:
-        ruby-version: ['2.7', '3.0', '3.1', 'head']
+        ruby-version: ['2.7', '3.0', '3.1', 'head', truffleruby-head]
         grape-version: [1.6.2, 1.5.3]
         model-parser: [grape-swagger-entity, grape-swagger-representable, '']
     steps:
